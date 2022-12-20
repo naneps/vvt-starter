@@ -10,8 +10,8 @@
           px-5
           py-2
           rounded-md
-          my-2
-          hover:bg-slate-100
+          my-5
+          hover:bg-slate-400
           transition-all
           ease-in-out
           duration-300
@@ -21,12 +21,12 @@
       >
         Use Template
       </button>
+      {{ mouseX }}, {{ mouseY }}
     </div>
   </main>
 </template>
 <script>
 export default {
-  computed: {},
   methods: {
     cloneIt() {
       window.open("https://github.com/naneps/vvt-starter/");
@@ -38,7 +38,7 @@ export default {
 .text-animation {
   /* make animation change random color */
   animation: text-animation 1s infinite;
-  transition: all 0.5s ease-in-out;
+  transition: all 0ms ease-in-out;
 }
 @keyframes text-animation {
   0% {
@@ -67,4 +67,5 @@ export default {
     transform: rotate(-2deg);
   }
 }
-</style>
+/* make tail animation */
+</style> 
