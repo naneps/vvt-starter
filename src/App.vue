@@ -19,7 +19,7 @@
         "
         @click="cloneIt"
       >
-        Use Template
+        Starter VVT
       </button>
       {{ mouseX }}, {{ mouseY }}
     </div>
